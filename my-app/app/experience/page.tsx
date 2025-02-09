@@ -27,7 +27,7 @@ export default function Experience() {
     if (lastInputRef.current) {
       lastInputRef.current.focus()
     }
-  }, [lastInputRef])
+  }, [positions]) //Fixed unnecessary dependency
 
   const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>, index: number) => {
     if (e.key === "Enter") {
@@ -95,7 +95,7 @@ export default function Experience() {
                     variant="ghost"
                     size="icon"
                     onClick={removePosition}
-                    className="absolute right-[-50px] top-1/2 transform -translate-y-1/2 text-white hover:bg-white/10"
+                    className="absolute right-[-50px] top-1/2 transform -translate-y-1/2 text-red-500 hover:bg-red-500/10 hover:text-red-400"
                   >
                     <Minus className="h-6 w-6" />
                   </Button>
@@ -106,7 +106,12 @@ export default function Experience() {
         </div>
 
         <div className="flex justify-center mt-8">
-          <Button variant="ghost" size="icon" onClick={addPosition} className="text-white hover:bg-white/10">
+          <Button
+            variant="ghost"
+            size="icon"
+            onClick={addPosition}
+            className="text-white hover:bg-white/10 bg-white/5 rounded-full p-6"
+          >
             <Plus className="h-8 w-8" />
           </Button>
         </div>

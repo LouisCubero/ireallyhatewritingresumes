@@ -38,7 +38,7 @@ export default function Home() {
       </Button>
 
       <div className="text-center max-w-4xl">
-        <h1 className="text-5xl md:text-7xl font-medium mb-6">
+        <h1 className="text-5xl md:text-7xl font-medium mb-6 whitespace-nowrap">
           i really hate{" "}
           <span
             className={`inline-block transition-opacity duration-200 ${isTransitioning ? "opacity-0" : "opacity-100"}`}
@@ -78,11 +78,10 @@ export default function Home() {
       </div>
 
       <div className="absolute bottom-4 right-4 text-gray-400">
-  <a href="https://www.linkedin.com/in/louiscubero" target="_blank" rel="noopener noreferrer">
-    by Louis Cubero
-  </a>
-</div>
+        <a href="https://www.linkedin.com/in/louiscubero" target="_blank" rel="noopener noreferrer">
+          by Louis Cubero
+        </a>
+      </div>
     </main>
   )
 }
-
