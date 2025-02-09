@@ -77,7 +77,11 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="absolute bottom-4 right-4 text-gray-400">by Louis Cubero</div>
+      <div className="absolute bottom-4 right-4 text-gray-400">
+  <a href="https://www.linkedin.com/in/louiscubero" target="_blank" rel="noopener noreferrer">
+    by Louis Cubero
+  </a>
+</div>
     </main>
   )
 }
